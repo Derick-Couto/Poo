@@ -19,9 +19,11 @@ public class SistemaBanco {
         Conta minhaConta, contaDestino;
         
         Pessoa maria, joao, felipe;
-        maria = new Pessoa("Maria");
-        joao = new Pessoa("Joao");
-        felipe = new Pessoa("Felipe");
+        Endereco je = new Endereco("endje", "come", "je1", "ki", 50);
+
+        maria = new Pessoa("Maria", new Endereco("aaa","aa","aaaa","a",1), new Telefone(22,837), new dataDeNascimento(21,12,1999));
+        joao = new Pessoa("Joao",je,new Telefone(2,3), new dataDeNascimento(21,11,1111));
+        felipe = new Pessoa("Felipe",new Endereco("aab","bb","aacca","cas",213), new Telefone(222,8337), new dataDeNascimento(211,122,13999));
         
         minhaConta = new Conta(maria, 1000, 700);
         minhaConta.imprimir();

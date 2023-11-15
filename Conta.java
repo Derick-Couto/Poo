@@ -55,7 +55,7 @@ public class Conta {
     public void imprimir() {
         System.out.println("#### Conta do Cliente ##########");
         System.out.println("Número da Conta: " + this.numero + " (de " + contadorDeContas + " contas)");
-        //System.out.println("Nome: " + this.pessoa);
+        System.out.println("Nome: " + this.pessoa);
         this.pessoa.imprimir();
         System.out.println("Saldo: " + this.saldo + "(Limite: " + this.limite + ")");
         System.out.println("################################");
